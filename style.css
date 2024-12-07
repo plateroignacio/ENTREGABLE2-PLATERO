@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(239, 255, 223);
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 100px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.navbar {
+    font-size: 18px;
+    padding: 0px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.subm {
+    position: relative;
+}
+
+.subm #carrito {
+    display: none;
+}
+
+.subm:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: rgb(161, 161, 161);
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: azure;
+}
+
+.borrar {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.borrar:hover {
+    background-color: #f1f1f1;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 15px;
+    color: black;
+    margin-bottom: 45px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 25px;
+    color: white;
+    border-radius: 25px;
+    background-color: black;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #333;
+}
+
+.header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img {
+    width: 400px;
+}
+
+.information {
+    width: 70%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 25px 75px;
+    margin-top: -75px;
+    background-color: white;
+}
+
+.information-content {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-1 img {
+    width: 35px;
+}
+
+h3 {
+    font-size: 17px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.information-1 p {
+    margin-bottom: 0;
+}
+
+.seg-tit {
+    padding: 100px 0 0 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.best {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-product {
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    transition: box-shadow 0.3s ease;
+}
+
+.b-product:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.b-product img {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.b-product p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.products {
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 40px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+
+.products-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.product img {
+    width: 150px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: rgb(0, 0, 0);
+}
+
+.product p {
+    font-size: 15px;
+    margin: 0;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-2 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: #333;
+}
+
+.contact {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    padding: 17px 35px;
+    border-radius: 25px;
+    outline: none;
+}
+
+.btn-3 {
+    margin-left: 10px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.btn-3:hover {
+    background-color: #333;
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: rgb(239, 255, 223);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.link a {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.link a:hover {
+    color: black;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: white;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .subm:hover #carrito {
+        min-width: 340px;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        margin-bottom: 20px;
+    }
+
+    .header-img img {
+        width: 300px;
+    }
+
+    .information {
+        display: none;
+    }
+
+    .best {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .b-product {
+        margin-bottom: 25px;
+    }
+
+    .products {
+        padding: 30px;
+    }
+
+    .products-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
