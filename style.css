@@ -464,3 +464,41 @@ input {
         text-align: center;
     }
 }
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    color: #fff;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c; 
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05);
+}
+
+#comprar {
+    background-color: #27ae60; 
+}
+
+#comprar:hover {
+    background-color: #2ecc71; 
+    transform: scale(1.05);
+}
+
+
+#vaciar {
+    background-color: #f39c12; 
+}
+
+#vaciar:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
